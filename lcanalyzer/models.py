@@ -23,7 +23,7 @@ def load_dataset(filename):
 def mean_mag(data,mag_col):
     """Calculate the mean magnitude of a lightcurve
     
-    :param data: the data to be analyzed
+    :param data: pd.DataFrame with observed magnitudes for a single source.
     :param mag_col: which magnitude columns to look at
     :returns: single value, the mean magnitude in the data
     """
@@ -33,7 +33,7 @@ def mean_mag(data,mag_col):
 def max_mag(data,mag_col):
     """Calculate the max magnitude of a lightcurve
     
-    :param data: the data to be analyzed
+    :param data: pd.DataFrame with observed magnitudes for a single source.
     :param mag_col: which magnitude columns to look at
     :returns: single value, the maximum magnitude in the data
     """
